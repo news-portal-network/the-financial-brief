@@ -1,9 +1,10 @@
 import React from 'react'
 import './styles.css'
+import GoogleAnalytics from './GoogleAnalytics'
 
 export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+  description: 'Clear financial insights. No noise. No jargon.',
+  title: 'The Financial Brief',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
@@ -12,6 +13,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics />
         <main>{children}</main>
       </body>
     </html>
