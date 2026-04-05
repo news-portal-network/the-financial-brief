@@ -1,7 +1,7 @@
 import Script from 'next/script'
 
 export default function GoogleAnalytics() {
-  const GA_ID = 'G-05FW9E37VN'
+  const GA_ID = 'G-6G70134SSK'
   
   if (process.env.NODE_ENV !== 'production') return null
 
