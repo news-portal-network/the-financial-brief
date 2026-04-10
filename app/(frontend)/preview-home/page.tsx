@@ -1,22 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { Playfair_Display, DM_Sans } from 'next/font/google'
-import '../styles.css'
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-dm-sans',
-  display: 'swap',
-  weight: ['400', '500'],
-})
 
 export default async function PreviewHomePage() {
   const today = new Date().toLocaleDateString('en-US', {
@@ -27,22 +10,7 @@ export default async function PreviewHomePage() {
   })
 
   return (
-    <div className={`${playfair.variable} ${dmSans.variable}`}
-         style={{ fontFamily: 'var(--font-dm-sans), -apple-system, sans-serif' }}>
-
-      <div className="container">
-        <nav className="nav-top" role="navigation" aria-label="Main navigation">
-          <div className="nav-links">
-            <Link href="#">Markets</Link>
-            <Link href="#">Economy</Link>
-            <Link href="#">Investing</Link>
-            <Link href="#">Crypto</Link>
-            <Link href="#">Tools</Link>
-          </div>
-          <button className="btn-subscribe">Subscribe</button>
-        </nav>
-      </div>
-
+    <>
       <div className="container">
         <header className="masthead">
           <div className="logo-text" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }} aria-label="The Financial Brief">
@@ -209,37 +177,6 @@ export default async function PreviewHomePage() {
           </form>
         </div>
       </section>
-
-      <footer className="footer" role="contentinfo">
-        <div className="container">
-          <div className="footer-inner">
-            <div>
-              <div className="footer-logo logo-text" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }} aria-label="The Financial Brief">
-                <span className="logo-the">The</span>
-                <span className="logo-financial">Financial</span>
-                <span className="logo-brief">Brief</span>
-              </div>
-              <p className="footer-copy">© 2026 The Financial Brief. All rights reserved.</p>
-            </div>
-            <nav className="footer-cols" aria-label="Footer navigation">
-              <div className="footer-col">
-                <span className="footer-col-label">Sections</span>
-                <Link href="#">Markets</Link><Link href="#">Economy</Link><Link href="#">Investing</Link><Link href="#">Crypto</Link>
-              </div>
-              <div className="footer-col">
-                <span className="footer-col-label">Company</span>
-                <Link href="#">About</Link><Link href="#">Contact</Link><Link href="#">Privacy</Link><Link href="#">Terms</Link>
-              </div>
-              <div className="footer-col">
-                <span className="footer-col-label">Connect</span>
-                <Link href="#">X / Twitter</Link><Link href="#">LinkedIn</Link><Link href="#">Newsletter</Link>
-              </div>
-            </nav>
-          </div>
-          <div className="footer-divider" role="presentation"></div>
-          <p className="footer-bottom">This is not financial advice. Always consult a professional before making investment decisions.</p>
-        </div>
-      </footer>
-    </div>
+    </>
   )
 }

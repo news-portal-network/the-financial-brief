@@ -1,5 +1,24 @@
 import React from 'react'
+import { Playfair_Display, DM_Sans } from 'next/font/google'
 import GoogleAnalytics from './GoogleAnalytics'
+import SiteHeader from './SiteHeader'
+import Footer from './Footer'
+import './styles.css'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+  weight: ['400', '500'],
+})
 
 export const metadata = {
   title: 'The Financial Brief — Clear financial insights. No noise. No jargon.',
@@ -28,9 +47,11 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <body>
+      <body className={`${playfair.variable} ${dmSans.variable}`} style={{ fontFamily: 'var(--font-dm-sans), -apple-system, sans-serif' }}>
         <GoogleAnalytics />
+        <SiteHeader />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
