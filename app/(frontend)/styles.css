@@ -1073,7 +1073,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 
 /* ── SVG Logo images ────────────────────────────────────────────── */
 .site-header__logo-img {
-  height: 28px;
+  height: 42px;
   width: auto;
   display: block;
 }
@@ -1094,4 +1094,22 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   .footer-logo-img {
     height: 80px;
   }
+}
+
+/* ── Custom SVG social icons ────────────────────────────────────── */
+.social-icon {
+  display: block;
+  filter: brightness(0) invert(0.7);
+  transition: filter 0.15s ease;
+}
+.social-icon:hover {
+  filter: brightness(0) invert(0.85);
+}
+.social-icon--header {
+  height: 18px;
+  width: auto;
+}
+.social-icon--footer {
+  height: 24px;
+  width: auto;
 }
