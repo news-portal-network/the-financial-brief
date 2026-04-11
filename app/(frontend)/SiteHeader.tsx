@@ -22,10 +22,8 @@ export default function SiteHeader() {
             <span className="site-header__date">{today}</span>
           </div>
           {!isHome && (
-            <Link href="/" className="site-header__logo" aria-label="The Financial Brief — Home" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-              <span className="site-header__logo-the">The</span>
-              <span className="site-header__logo-name">Financial</span>
-              <span className="site-header__logo-brief">Brief</span>
+            <Link href="/" className="site-header__logo" aria-label="The Financial Brief — Home">
+              <img src="/TFB_logo_reverse-horz.svg" alt="The Financial Brief" className="site-header__logo-img" />
             </Link>
           )}
           <div className="site-header__right">

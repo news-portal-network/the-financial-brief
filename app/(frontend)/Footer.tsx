@@ -21,10 +21,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-inner">
           <div>
-            <div className="footer-logo logo-text" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }} aria-label="The Financial Brief">
-              <span className="footer-logo-the">The</span>
-              <span className="footer-logo-financial">Financial</span>
-              <span className="footer-logo-brief">Brief</span>
+            <div className="footer-logo" aria-label="The Financial Brief">
+              <img src="/TFB_logo_reverse-stacked.svg" alt="The Financial Brief" className="footer-logo-img" />
             </div>
             <p className="footer-copy">&copy; 2026 The Financial Brief. All rights reserved.</p>
             <div className="footer-social">

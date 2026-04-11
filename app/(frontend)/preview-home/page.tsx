@@ -13,11 +13,7 @@ export default async function PreviewHomePage() {
     <>
       <div className="container">
         <header className="masthead">
-          <div className="logo-text" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }} aria-label="The Financial Brief">
-            <span className="logo-the">The</span>
-            <span className="logo-financial">Financial</span>
-            <span className="logo-brief">Brief</span>
-          </div>
+          <img src="/TFB_logo_black-stacked_1.svg" alt="The Financial Brief" className="masthead-logo-img" />
           <div className="masthead-meta">
             <span>Clear financial insights · No noise · No jargon</span>
             <span>{today} · Toronto</span>

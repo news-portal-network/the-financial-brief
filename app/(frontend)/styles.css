@@ -1070,3 +1070,28 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   line-height: 1.55;
   margin-top: 10px;
 }
+
+/* ── SVG Logo images ────────────────────────────────────────────── */
+.site-header__logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+.masthead-logo-img {
+  height: 180px;
+  width: auto;
+  display: block;
+}
+.footer-logo-img {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .masthead-logo-img {
+    height: 110px;
+  }
+  .footer-logo-img {
+    height: 80px;
+  }
+}
