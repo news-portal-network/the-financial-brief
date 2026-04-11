@@ -166,17 +166,7 @@ export default async function PreviewHomePage() {
         </div>
       </div>
 
-      <section className="cta-block" aria-label="Newsletter signup">
-        <div className="container">
-          <h2 className="cta-title" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Get the Weekend Reading<br />every Friday</h2>
-          <p className="cta-desc">Deep analysis and explainers. Delivered free to your inbox.</p>
-          <form className="cta-form" aria-label="Subscribe to newsletter">
-            <label htmlFor="email-input" style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)' }}>Email address</label>
-            <input type="email" id="email-input" className="cta-input" placeholder="your@email.com" required />
-            <button type="submit" className="cta-btn">Subscribe</button>
-          </form>
-        </div>
-      </section>
+      
     </>
   )
 }
