@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer" role="contentinfo">
       <div className="footer-newsletter-bar">
-        <div className="container footer-newsletter-bar-inner">
+        <div className="container">
           <div className="footer-newsletter-text">
             <span className="footer-newsletter-label" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Get the Weekend Reading every Friday</span>
             <span className="footer-newsletter-sub">Deep analysis and explainers. Free.</span>

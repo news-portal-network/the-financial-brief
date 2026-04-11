@@ -85,6 +85,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .cta-btn { background: var(--gold-on-black); color: var(--bg-dark); font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; padding: 14px 30px; cursor: pointer; border: none; transition: background 0.2s; font-family: inherit; }
 .cta-btn:hover { background: #E4B90A; }
 .footer { background: var(--bg-dark); padding: 0 0 2rem; }
+.footer > .container:last-of-type { padding-top: 3rem; }
 .footer-inner { display: flex; justify-content: space-between; align-items: flex-end; }
 .footer-logo .logo-the { font-size: 10px; color: var(--text-on-dark); }
 .footer-logo .logo-financial { font-size: 20px; color: var(--text-on-dark); letter-spacing: -0.5px; }
@@ -965,14 +966,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 }
 .footer .footer-newsletter-bar {
   background: #1a1a1a;
-  padding: 3rem 4rem;
 }
-.footer .footer-newsletter-bar-inner {
+.footer .footer-newsletter-bar > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
+
 .footer .footer-newsletter-label {
   font-size: 1.5rem;
   color: var(--text-on-dark);
@@ -1069,4 +1072,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   background: #333;
   margin: 0;
   width: 100%;
+}
+.footer .container + .footer-divider-fullbleed {
+  margin: 0;
 }
