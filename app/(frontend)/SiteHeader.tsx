@@ -67,10 +67,20 @@ export default function SiteHeader() {
       </nav>
       {menuOpen && (
         <div className="site-header__fullscreen-menu">
+          <div className="site-header__fullscreen-top">
+            <Link href="/" onClick={() => setMenuOpen(false)} aria-label="The Financial Brief — Home">
+              <img src="/TFB_logo_reverse-horz.svg" alt="The Financial Brief" className="site-header__fullscreen-top-logo" />
+            </Link>
+            <button
+              className="site-header__close-btn"
+              onClick={() => setMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <span className="site-header__close-line"></span>
+              <span className="site-header__close-line"></span>
+            </button>
+          </div>
           <div className="site-header__fullscreen-content">
-            <div className="site-header__mobile-logo">
-              <img src="/TFB_logo_reverse-stacked.svg" alt="The Financial Brief" className="site-header__mobile-logo-img" />
-            </div>
             <nav className="site-header__mobile-nav" role="navigation" aria-label="Mobile navigation">
               <Link href="/category/markets" onClick={() => setMenuOpen(false)}>Markets</Link>
               <Link href="/category/economy" onClick={() => setMenuOpen(false)}>Economy</Link>

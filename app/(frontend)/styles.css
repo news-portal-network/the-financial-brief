@@ -1288,3 +1288,47 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     display: none !important;
   }
 }
+
+/* ── Fullscreen menu top bar (logo left, close right) ───────────── */
+.site-header__fullscreen-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+}
+.site-header__fullscreen-top-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.site-header__close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.site-header__close-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-on-dark);
+  position: absolute;
+}
+.site-header__close-line:first-child {
+  transform: rotate(45deg);
+}
+.site-header__close-line:last-child {
+  transform: rotate(-45deg);
+}
