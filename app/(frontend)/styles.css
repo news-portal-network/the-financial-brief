@@ -674,7 +674,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     font-size: 0.625rem;
   }
   .site-header__logo--desktop {
-    display: none;
+    display: flex;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .site-header__logo--desktop .site-header__logo-img {
+    height: 22px;
+  }
+  .site-header__top-inner {
+    position: relative;
+    justify-content: flex-end;
+  }
+  .site-header__left {
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+  }
+  .site-header__date {
+    font-size: 0.5625rem !important;
   }
 }
 
