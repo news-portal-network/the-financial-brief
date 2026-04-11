@@ -1439,18 +1439,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 @media (max-width: 768px) {
   .site-header__top-inner {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .site-header__logo--desktop {
     display: flex;
-    order: -1;
-    flex-basis: auto;
-    flex-grow: 1;
+    order: 1;
   }
   .site-header__logo--desktop .site-header__logo-img {
     height: 32px;
   }
   .site-header__right {
-    order: 0;
+    order: 2;
+    margin-left: auto;
   }
   .site-header__left {
     order: 3;
