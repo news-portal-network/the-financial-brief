@@ -31,13 +31,13 @@ export default function SiteHeader() {
           <div className="site-header__right">
             <div className="site-header__social">
               <a href="#" aria-label="Follow on X / Twitter" className="site-header__social-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
               <a href="#" aria-label="Follow on LinkedIn" className="site-header__social-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5.00C6.94 5.93 6.19 6.68 5.26 6.68C4.33 6.68 3.58 5.93 3.58 5.00C3.58 4.07 4.33 3.32 5.26 3.32C6.19 3.32 6.94 4.07 6.94 5.00ZM7.00 8.48H3.52V20.74H7.00V8.48ZM13.32 8.48H9.86V20.74H13.28V14.34C13.28 10.82 17.84 10.52 17.84 14.34V20.74H21.28V13.06C21.28 7.36 14.86 7.60 13.28 10.38L13.32 8.48Z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5C.02 2.12 1.13 1 2.5 1S4.98 2.12 4.98 3.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/></svg>
               </a>
               <a href="#" aria-label="Follow on Facebook" className="site-header__social-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"/></svg>
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"/></svg>
               </a>
             </div>
             <button className="site-header__subscribe">Subscribe</button>
