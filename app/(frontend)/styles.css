@@ -1435,22 +1435,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   }
 }
 
-/* ── FINAL FIX: mobile header order ─────────────────────────────── */
+/* ── Mobile internal page header ────────────────────────────────── */
 @media (max-width: 768px) {
-  .site-header__top-inner {
+  .site-header__logo--desktop {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    order: -1;
+  }
+  .site-header__logo--desktop .site-header__logo-img {
+    height: 32px;
   }
   .site-header__left {
-    order: 1;
-  }
-  .site-header__logo--desktop {
-    order: 2;
-  }
-  .site-header__right {
-    order: 3;
-    margin-left: auto;
+    display: none;
   }
 }
