@@ -681,7 +681,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     transform: translateY(-50%);
   }
   .site-header__logo--desktop .site-header__logo-img {
-    height: 22px;
+    height: 32px;
   }
   .site-header__top-inner {
     position: relative;
