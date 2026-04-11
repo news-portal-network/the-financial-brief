@@ -32,8 +32,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .hero-main { position: relative; background: var(--bg-dark); overflow: hidden; min-height: 500px; display: flex; flex-direction: column; justify-content: flex-end; padding: 2.5rem; }
 .hero-main::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.95) 55%); z-index: 1; }
 .hero-main > * { position: relative; z-index: 2; }
-.hero-breaking { color: var(--gold-on-black); font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; position: absolute; top: 20px; left: 20px; z-index: 2; }
-.hero-cat { font-size: 11px; color: var(--text-on-dark-secondary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+.hero-breaking { color: var(--bg-dark); font-size: 13px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; position: absolute; top: 20px; left: 20px; z-index: 2; background: #D4A80A; padding: 6px 14px; }
+.hero-cat { font-size: 13px; color: var(--gold-on-black); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; background: rgba(0,0,0,0.7); padding: 6px 14px; display: inline-block; }
 .hero-title { font-size: 48px; color: var(--text-on-dark); line-height: 1.25; margin-bottom: 16px; letter-spacing: -1.2px; }
 .hero-desc { font-size: 16px; color: var(--text-on-dark-secondary); line-height: 1.4; }
 .hero-side { display: flex; flex-direction: column; gap: 2.5rem; justify-content: center; }
