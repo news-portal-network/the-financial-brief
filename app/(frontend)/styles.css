@@ -675,19 +675,27 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   }
   .site-header__logo--desktop {
     display: flex;
+    order: -1;
   }
   .site-header__logo--desktop .site-header__logo-img {
     height: 42px;
   }
   .site-header__top-inner {
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   .site-header__left {
-    display: none;
+    width: 100%;
+    order: 1;
+    margin-top: 8px;
+  }
+  .site-header__date {
+    font-size: 0.625rem;
   }
   .site-header__date {
     font-size: 0.5625rem !important;
