@@ -1434,3 +1434,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     display: none !important;
   }
 }
+
+/* ── FINAL FIX: mobile header order ─────────────────────────────── */
+@media (max-width: 768px) {
+  .site-header__top-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-header__left {
+    order: 1;
+  }
+  .site-header__logo--desktop {
+    order: 2;
+  }
+  .site-header__right {
+    order: 3;
+    margin-left: auto;
+  }
+}
