@@ -12,7 +12,7 @@
   --border-dark: #333333;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #fff; color: #111; -webkit-font-smoothing: antialiased; font-size: 18px; line-height: 1.6; }
+body { background: #fff; color: #111; -webkit-font-smoothing: antialiased; font-size: 18px; line-height: 1.4; }
 a { text-decoration: none; color: inherit; }
 a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset: 2px; }
 .container { max-width: 1440px; margin: 0 auto; padding: 0 4rem; }
@@ -34,11 +34,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .hero-main > * { position: relative; z-index: 2; }
 .hero-breaking { color: var(--gold-on-black); font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; position: absolute; top: 20px; left: 20px; z-index: 2; }
 .hero-cat { font-size: 11px; color: var(--text-on-dark-secondary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
-.hero-title { font-size: 48px; color: var(--text-on-dark); line-height: 1.05; margin-bottom: 16px; letter-spacing: -1.2px; }
-.hero-desc { font-size: 16px; color: var(--text-on-dark-secondary); line-height: 1.6; }
+.hero-title { font-size: 48px; color: var(--text-on-dark); line-height: 1.25; margin-bottom: 16px; letter-spacing: -1.2px; }
+.hero-desc { font-size: 16px; color: var(--text-on-dark-secondary); line-height: 1.4; }
 .hero-side { display: flex; flex-direction: column; gap: 2.5rem; justify-content: center; }
 .hero-side-cat { font-size: 11px; color: var(--text-secondary); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-.hero-side-title { font-size: 24px; line-height: 1.3; letter-spacing: -0.8px; color: var(--text-primary); }
+.hero-side-title { font-size: 24px; line-height: 1.25; letter-spacing: -0.8px; color: var(--text-primary); }
 .hero-side-title:hover { text-decoration: underline; }
 .hero-side-time { font-size: 13px; color: var(--text-tertiary); margin-top: 10px; }
 .divider { height: 1px; background: var(--border-light); }
@@ -51,9 +51,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .ad-banner { height: 110px; }
 .editorial-ad-row { display: grid; grid-template-columns: 1fr 300px; gap: 3rem; padding: 3rem 0; border-bottom: 1px solid var(--border-light); align-items: start; }
 .editorial-pick-label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 1.25rem; }
-.editorial-pick-title { font-size: 28px; line-height: 1.15; letter-spacing: -0.8px; color: var(--text-primary); margin-bottom: 12px; display: inline-block; }
+.editorial-pick-title { font-size: 28px; line-height: 1.25; letter-spacing: -0.8px; color: var(--text-primary); margin-bottom: 12px; display: inline-block; }
 .editorial-pick-title:hover { text-decoration: underline; }
-.editorial-pick-desc { font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px; }
+.editorial-pick-desc { font-size: 16px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 14px; }
 .editorial-pick-link { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-on-white); font-weight: 500; }
 .editorial-pick-link:hover { text-decoration: underline; }
 .section { padding: 4rem 0; border-bottom: 1px solid var(--border-light); }
@@ -62,16 +62,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .briefings-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5rem 3rem; }
 .briefing-num { font-size: 12px; color: var(--text-secondary); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
 .briefing-num .gold { color: var(--gold-on-white); }
-.briefing-title { font-size: 22px; line-height: 1.3; letter-spacing: -0.8px; color: var(--text-primary); }
+.briefing-title { font-size: 22px; line-height: 1.25; letter-spacing: -0.8px; color: var(--text-primary); }
 .briefing-title:hover { text-decoration: underline; }
 .briefing-time { font-size: 13px; color: var(--text-tertiary); margin-top: 10px; }
 .dark-block { background: var(--bg-dark); margin: 0; padding: 5rem 0; }
-.wr-title { font-size: 54px; color: var(--text-on-dark); line-height: 1.04; letter-spacing: -1.5px; margin-bottom: 18px; max-width: 900px; }
-.wr-desc { font-size: 18px; color: var(--text-on-dark-secondary); line-height: 1.6; margin-bottom: 24px; max-width: 620px; }
+.wr-title { font-size: 54px; color: var(--text-on-dark); line-height: 1.25; letter-spacing: -1.5px; margin-bottom: 18px; max-width: 900px; }
+.wr-desc { font-size: 18px; color: var(--text-on-dark-secondary); line-height: 1.4; margin-bottom: 24px; max-width: 620px; }
 .wr-link { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-on-black); font-weight: 500; }
 .wr-link:hover { text-decoration: underline; }
 .tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
-.tool-title { font-size: 20px; letter-spacing: -0.5px; color: var(--text-primary); margin-bottom: 8px; }
+.tool-title { font-size: 20px; line-height: 1.25; letter-spacing: -0.5px; color: var(--text-primary); margin-bottom: 8px; }
 .tool-desc { font-size: 16px; color: var(--text-secondary); line-height: 1.5; }
 .tool-link { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-on-white); font-weight: 500; margin-top: 14px; display: inline-block; }
 .tool-link:hover { text-decoration: underline; }
@@ -185,7 +185,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 
 .article__title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.8px;
   color: var(--text-primary);
   margin: 0 0 1rem;
@@ -193,7 +193,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 
 .article__excerpt {
   font-size: 1.1875rem;
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--text-secondary);
   margin: 0 0 1.25rem;
 }
@@ -240,7 +240,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 
 .article__body {
   font-size: 1.125rem;
-  line-height: 1.8;
+  line-height: 1.4;
   color: var(--text-primary);
 }
 
@@ -250,7 +250,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 
 .article__body h2 {
   font-size: 1.5rem;
-  line-height: 1.3;
+  line-height: 1.25;
   letter-spacing: -0.5px;
   color: var(--text-primary);
   margin: 2.5rem 0 1rem;
@@ -259,7 +259,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .article__body h3 {
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 1.25;
   color: var(--text-primary);
   margin: 2rem 0 0.75rem;
 }
@@ -1067,7 +1067,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .briefing-desc {
   font-size: 15px;
   color: var(--text-secondary);
-  line-height: 1.55;
+  line-height: 1.4;
   margin-top: 10px;
 }
 
