@@ -971,13 +971,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   padding: 1.5rem 0;
 }
 .footer .footer-newsletter-label {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: var(--text-on-dark);
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 .footer .footer-newsletter-sub {
-  font-size: 0.8125rem;
+  font-size: 1rem;
   color: var(--text-on-dark-secondary);
+  margin-top: 0.25rem;
 }
 .footer .footer-newsletter-form {
   display: flex;
