@@ -1282,7 +1282,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   margin-bottom: 2.5rem;
 }
 .site-header__mobile-logo-img {
-  height: 90px;
+  height: 42px;
   width: auto;
   display: block;
 }
@@ -1360,7 +1360,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   flex-shrink: 0;
 }
 .mobile-menu-top-logo {
-  height: 32px;
+  height: 42px;
   width: auto;
   display: block;
 }
