@@ -765,27 +765,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 }
 
 /* ── Footer newsletter bar ──────────────────────────────────────── */
-.footer-newsletter-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 1.5rem 0;
-}
 .footer-newsletter-text {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
-.footer-newsletter-label {
-  font-size: 1.125rem;
-  color: var(--text-on-dark);
-  letter-spacing: -0.3px;
-}
-.footer-newsletter-sub {
-  font-size: 0.8125rem;
-  color: var(--text-on-dark-secondary);
-}
+
 .footer-newsletter-form {
   display: flex;
   gap: 0;
