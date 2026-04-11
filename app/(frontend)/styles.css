@@ -1289,46 +1289,93 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   }
 }
 
-/* ── Fullscreen menu top bar (logo left, close right) ───────────── */
-.site-header__fullscreen-top {
-  position: absolute;
+
+
+/* ── Mobile fullscreen overlay ──────────────────────────────────── */
+.mobile-menu-overlay {
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-dark);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 1.5rem;
+  flex-shrink: 0;
 }
-.site-header__fullscreen-top-logo {
-  height: 24px;
+.mobile-menu-top-logo {
+  height: 32px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
 }
-.site-header__close-btn {
+.mobile-menu-close {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  color: var(--text-on-dark-secondary);
+  padding: 4px;
+  transition: color 0.15s ease;
+}
+.mobile-menu-close:hover {
+  color: var(--text-on-dark);
+}
+.mobile-menu-body {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
-  position: relative;
+  justify-content: center;
+  padding: 0 2rem 4rem;
 }
-.site-header__close-line {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--text-on-dark);
-  position: absolute;
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
-.site-header__close-line:first-child {
-  transform: rotate(45deg);
+.mobile-menu-nav a {
+  font-size: 1.125rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-on-dark-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
-.site-header__close-line:last-child {
-  transform: rotate(-45deg);
+.mobile-menu-nav a:hover {
+  color: var(--text-on-dark);
+}
+.mobile-menu-subscribe {
+  font-size: 0.8125rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--bg-dark);
+  background: #D4A80A;
+  border: none;
+  border-radius: 0;
+  padding: 14px 48px;
+  cursor: pointer;
+  font-family: inherit;
+  margin-bottom: 1.5rem;
+}
+.mobile-menu-subscribe:hover {
+  background: #E4B90A;
+}
+.mobile-menu-social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  .mobile-menu-overlay {
+    display: none !important;
+  }
 }
