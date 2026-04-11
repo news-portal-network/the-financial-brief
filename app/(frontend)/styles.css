@@ -659,10 +659,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 }
 @media (max-width: 768px) {
   .site-header__top-inner {
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
   .site-header__nav-inner {
     flex-wrap: wrap;
@@ -670,6 +670,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     justify-content: center;
   }
   .site-header__date {
+    display: block !important;
+    font-size: 0.625rem;
+  }
+  .site-header__logo--desktop {
     display: none;
   }
 }
