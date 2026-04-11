@@ -869,17 +869,33 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 
 /* ── Footer responsive ──────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .footer-newsletter-bar {
+  .footer .footer-newsletter-bar .container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.25rem;
   }
-  .footer-newsletter-input {
-    min-width: 160px;
+  .footer .footer-newsletter-bar .footer-newsletter-form {
+    width: 100%;
   }
-  .footer-logo-financial,
-  .footer-logo-brief {
-    font-size: 40px;
+  .footer .footer-newsletter-bar .footer-newsletter-input {
+    min-width: 0;
+    flex: 1;
+  }
+  .footer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+  .footer-logo-img {
+    height: 100px;
+  }
+  .footer-social {
+    margin-top: 1rem;
+  }
+  .footer-cols {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
   }
 }
 
