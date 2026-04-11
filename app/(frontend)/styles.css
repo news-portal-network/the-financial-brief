@@ -84,7 +84,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .cta-input:focus { border-color: var(--gold-on-black); }
 .cta-btn { background: var(--gold-on-black); color: var(--bg-dark); font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; padding: 14px 30px; cursor: pointer; border: none; transition: background 0.2s; font-family: inherit; }
 .cta-btn:hover { background: #E4B90A; }
-.footer { background: var(--bg-dark); padding: 3rem 0 2rem; }
+.footer { background: var(--bg-dark); padding: 0 0 2rem; }
 .footer-inner { display: flex; justify-content: space-between; align-items: flex-end; }
 .footer-logo .logo-the { font-size: 10px; color: var(--text-on-dark); }
 .footer-logo .logo-financial { font-size: 20px; color: var(--text-on-dark); letter-spacing: -0.5px; }
@@ -94,7 +94,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .footer-col { display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--text-on-dark-secondary); }
 .footer-col a:hover { text-decoration: underline; color: var(--text-on-dark); }
 .footer-col-label { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-on-dark-secondary); margin-bottom: 6px; }
-.footer-divider { height: 1px; background: #1a1a1a; margin: 2rem 0 1.5rem; }
+.footer-divider { height: 1px; background: #333; margin: 0; }
 .footer-bottom { font-size: 13px; color: var(--text-on-dark-secondary); text-align: center; }
 .ad-slot-4-wrapper { padding: 3rem 0; }
 @media (max-width: 768px) {
@@ -965,7 +965,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 }
 .footer .footer-newsletter-bar {
   background: #1a1a1a;
-  padding: 2.75rem 4rem;
+  padding: 3rem 4rem;
 }
 .footer .footer-newsletter-bar-inner {
   display: flex;
@@ -1061,4 +1061,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .article__share-btn:focus-visible {
   outline: 2px solid var(--text-primary);
   outline-offset: 2px;
+}
+
+/* ── Footer full bleed divider ──────────────────────────────────── */
+.footer-divider-fullbleed {
+  height: 1px;
+  background: #333;
+  margin: 0;
+  width: 100%;
 }

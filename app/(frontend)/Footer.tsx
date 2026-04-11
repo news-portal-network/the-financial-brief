@@ -17,8 +17,8 @@ export default function Footer() {
           </form>
         </div>
       </div>
+      <div className="footer-divider-fullbleed" role="presentation"></div>
       <div className="container">
-        <div className="footer-divider" role="presentation"></div>
         <div className="footer-inner">
           <div>
             <div className="footer-logo logo-text" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }} aria-label="The Financial Brief">
