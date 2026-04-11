@@ -1113,3 +1113,100 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   height: 24px;
   width: auto;
 }
+
+/* ── Hamburger menu + mobile nav ────────────────────────────────── */
+.site-header__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 1001;
+}
+.site-header__hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-on-dark);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.site-header__hamburger-line.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.site-header__hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+.site-header__hamburger-line.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.site-header__mobile-menu {
+  background: var(--bg-dark);
+  padding: 2rem 4rem 2.5rem;
+  border-top: 1px solid #222;
+}
+.site-header__mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.site-header__mobile-nav a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-on-dark-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.site-header__mobile-nav a:hover {
+  color: var(--text-on-dark);
+}
+.site-header__mobile-social {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #222;
+}
+.site-header__mobile-subscribe {
+  margin-top: 1.5rem;
+  font-size: 0.8125rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--bg-dark);
+  background: #D4A80A;
+  border: none;
+  border-radius: 0;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .site-header__hamburger {
+    display: flex;
+  }
+  .site-header__nav--desktop {
+    display: none;
+  }
+  .site-header__social--desktop {
+    display: none;
+  }
+  .site-header__subscribe--desktop {
+    display: none;
+  }
+  .site-header__mobile-menu {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+  .site-header__date {
+    display: block !important;
+    font-size: 0.6875rem;
+  }
+}
+@media (min-width: 769px) {
+  .site-header__mobile-menu {
+    display: none !important;
+  }
+}
