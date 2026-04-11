@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="footer" role="contentinfo">
-      <div className="container">
-        <div className="footer-newsletter-bar">
+      <div className="footer-newsletter-bar">
+        <div className="container footer-newsletter-bar-inner">
           <div className="footer-newsletter-text">
             <span className="footer-newsletter-label" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Get the Weekend Reading every Friday</span>
             <span className="footer-newsletter-sub">Deep analysis and explainers. Free.</span>
@@ -16,6 +16,8 @@ export default function Footer() {
             <button type="submit" className="footer-newsletter-btn">Subscribe</button>
           </form>
         </div>
+      </div>
+      <div className="container">
         <div className="footer-divider" role="presentation"></div>
         <div className="footer-inner">
           <div>
