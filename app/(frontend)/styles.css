@@ -96,7 +96,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
 .footer-col a:hover { text-decoration: underline; color: var(--text-on-dark); }
 .footer-col-label { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-on-dark-secondary); margin-bottom: 6px; }
 .footer-divider { height: 1px; background: #333; margin: 0; }
-.footer-bottom { font-size: 13px; color: var(--text-on-dark-secondary); text-align: center; }
+.footer-bottom { font-size: 13px; color: var(--text-on-dark-secondary); text-align: center; padding-top: 60px; }
 .ad-slot-4-wrapper { padding: 3rem 0; }
 @media (max-width: 768px) {
   .container { padding: 0 1.25rem; }
