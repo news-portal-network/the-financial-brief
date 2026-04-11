@@ -48,18 +48,21 @@ export default async function PreviewHomePage() {
               <article>
                 <p className="hero-side-cat">Economy</p>
                 <h2><Link className="hero-side-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Canada&apos;s housing starts jump 12% — what it means for buyers</Link></h2>
+                <p className="hero-side-desc">New data from CMHC shows a sharp rebound in construction activity, particularly in Ontario and B.C. — a potential turning point for supply-starved markets.</p>
                 <p className="hero-side-time">3 min read</p>
               </article>
               <div className="divider" role="presentation"></div>
               <article>
                 <p className="hero-side-cat">Crypto</p>
                 <h2><Link className="hero-side-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Bitcoin breaks $95K as institutional demand surges</Link></h2>
+                <p className="hero-side-desc">Spot Bitcoin ETFs saw record inflows this week as major asset managers doubled down on crypto allocation strategies ahead of the halving cycle.</p>
                 <p className="hero-side-time">4 min read</p>
               </article>
               <div className="divider" role="presentation"></div>
               <article>
                 <p className="hero-side-cat">Investing</p>
                 <h2><Link className="hero-side-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Why smart money is moving into energy ETFs this quarter</Link></h2>
+                <p className="hero-side-desc">With oil prices stabilizing and renewable energy stocks gaining momentum, institutional investors are quietly repositioning for the second half of 2026.</p>
                 <p className="hero-side-time">5 min read</p>
               </article>
             </div>
@@ -88,16 +91,19 @@ export default async function PreviewHomePage() {
               <article>
                 <p className="briefing-num"><span className="gold">01</span> · Markets</p>
                 <h3><Link className="briefing-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>S&amp;P 500 closes flat amid tech earnings uncertainty</Link></h3>
+                <p className="briefing-desc">Markets treaded water as investors braced for a wave of Big Tech earnings reports expected to set the tone for Q2.</p>
                 <p className="briefing-time">3 min read</p>
               </article>
               <article>
                 <p className="briefing-num"><span className="gold">02</span> · Economy</p>
                 <h3><Link className="briefing-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>UK inflation drops to 2.1% — Bank of England weighs next move</Link></h3>
+                <p className="briefing-desc">The pound held steady as CPI data came in slightly below expectations, raising hopes for a rate cut at the next MPC meeting.</p>
                 <p className="briefing-time">4 min read</p>
               </article>
               <article>
                 <p className="briefing-num"><span className="gold">03</span> · Personal finance</p>
                 <h3><Link className="briefing-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>The 3 savings accounts actually worth opening in 2026</Link></h3>
+                <p className="briefing-desc">High-yield savings rates are still strong — but not all accounts are created equal. Here are the ones actually worth your time.</p>
                 <p className="briefing-time">5 min read</p>
               </article>
               <div className="ad-slot ad-infeed" role="complementary" aria-label="Advertisement">
@@ -106,16 +112,19 @@ export default async function PreviewHomePage() {
               <article>
                 <p className="briefing-num"><span className="gold">04</span> · Real estate</p>
                 <h3><Link className="briefing-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Toronto condo market shows first signs of recovery</Link></h3>
+                <p className="briefing-desc">After 18 months of declining sales, new absorption data suggests the downtown condo glut may finally be clearing.</p>
                 <p className="briefing-time">4 min read</p>
               </article>
               <article>
                 <p className="briefing-num"><span className="gold">05</span> · Banking</p>
                 <h3><Link className="briefing-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>RBC and TD raise mortgage rates — here&apos;s what changed</Link></h3>
+                <p className="briefing-desc">Canada&apos;s two largest banks hiked fixed mortgage rates this week, signaling that the era of easy borrowing isn&apos;t coming back soon.</p>
                 <p className="briefing-time">3 min read</p>
               </article>
               <article>
                 <p className="briefing-num"><span className="gold">06</span> · Global</p>
                 <h3><Link className="briefing-title" href="#" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>China&apos;s manufacturing PMI beats expectations for third month</Link></h3>
+                <p className="briefing-desc">Factory output expanded for the third consecutive month, easing fears of a prolonged slowdown in the world&apos;s second-largest economy.</p>
                 <p className="briefing-time">4 min read</p>
               </article>
             </div>
