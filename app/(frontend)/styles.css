@@ -675,22 +675,19 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   }
   .site-header__logo--desktop {
     display: flex;
-    position: absolute;
-    left: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
   }
   .site-header__logo--desktop .site-header__logo-img {
-    height: 32px;
+    height: 42px;
   }
   .site-header__top-inner {
-    position: relative;
+    flex-direction: row;
     justify-content: space-between;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .site-header__left {
-    position: static;
+    display: none;
   }
   .site-header__date {
     font-size: 0.5625rem !important;
