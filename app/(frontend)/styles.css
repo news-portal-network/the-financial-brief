@@ -1419,7 +1419,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     flex: 1;
   }
   .site-header__logo--desktop .site-header__logo-img {
-    height: 32px;
+    height: 42px;
+  }
+  .site-header__top-inner:has(.site-header__logo--desktop) {
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
   .site-header__top-inner:has(.site-header__logo--desktop) .site-header__left {
     width: 100%;
