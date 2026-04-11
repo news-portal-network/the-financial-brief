@@ -657,49 +657,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   height: 1px;
   background: linear-gradient(90deg, transparent, #D4A80A, transparent);
 }
-@media (max-width: 768px) {
-  .site-header__top-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-  .site-header__nav-inner {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .site-header__date {
-    display: block;
-    font-size: 0.625rem;
-  }
-  .site-header__logo--desktop {
-    display: flex;
-    order: -1;
-  }
-  .site-header__logo--desktop .site-header__logo-img {
-    height: 42px;
-  }
-  .site-header__top-inner {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .site-header__left {
-    width: 100%;
-    order: 1;
-    margin-top: 8px;
-  }
-  .site-header__date {
-    font-size: 0.625rem;
-  }
-  .site-header__date {
-    font-size: 0.5625rem !important;
-  }
-}
+
 
 /* ── Header logo size increase for internal pages ───────────────── */
 .site-header__logo-name,
@@ -1235,13 +1193,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   .site-header__hamburger {
     display: flex;
   }
-  .site-header__left {
-    flex: 1;
-  }
-  .site-header__right {
-    flex: 0;
-    margin-left: auto;
-  }
+
   .site-header__nav--desktop {
     display: none;
   }
@@ -1435,8 +1387,32 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   }
 }
 
-/* ── Mobile internal page header ────────────────────────────────── */
+
+
+/* ── CLEAN Mobile header rules ──────────────────────────────────── */
 @media (max-width: 768px) {
+  .site-header__top-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .site-header__nav--desktop {
+    display: none;
+  }
+  .site-header__social--desktop {
+    display: none;
+  }
+  .site-header__subscribe--desktop {
+    display: none;
+  }
+  .site-header__hamburger {
+    display: flex;
+  }
+  .site-header__date {
+    font-size: 0.625rem;
+  }
   .site-header__logo--desktop {
     display: flex;
   }
