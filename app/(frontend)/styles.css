@@ -681,13 +681,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
     height: 42px;
   }
   .site-header__top-inner {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .site-header__left {
     width: 100%;
