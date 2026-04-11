@@ -66,29 +66,34 @@ export default function SiteHeader() {
         </div>
       </nav>
       {menuOpen && (
-        <div className="site-header__mobile-menu">
-          <nav className="site-header__mobile-nav" role="navigation" aria-label="Mobile navigation">
-            <Link href="/category/markets" onClick={() => setMenuOpen(false)}>Markets</Link>
-            <Link href="/category/economy" onClick={() => setMenuOpen(false)}>Economy</Link>
-            <Link href="/category/investing" onClick={() => setMenuOpen(false)}>Investing</Link>
-            <Link href="/category/crypto" onClick={() => setMenuOpen(false)}>Crypto</Link>
-            <Link href="/category/real-estate" onClick={() => setMenuOpen(false)}>Real Estate</Link>
-            <Link href="/category/banking" onClick={() => setMenuOpen(false)}>Banking</Link>
-            <Link href="/category/personal-finance" onClick={() => setMenuOpen(false)}>Personal Finance</Link>
-            <Link href="#" onClick={() => setMenuOpen(false)}>Tools</Link>
-          </nav>
-          <div className="site-header__mobile-social">
-            <a href="#" aria-label="Follow on X / Twitter" className="site-header__social-link">
-              <img src="/x-icon.svg" alt="" className="social-icon social-icon--header" />
-            </a>
-            <a href="#" aria-label="Follow on LinkedIn" className="site-header__social-link">
-              <img src="/linkedin-icon.svg" alt="" className="social-icon social-icon--header" />
-            </a>
-            <a href="#" aria-label="Follow on Facebook" className="site-header__social-link">
-              <img src="/facebook-icon.svg" alt="" className="social-icon social-icon--header" />
-            </a>
+        <div className="site-header__fullscreen-menu">
+          <div className="site-header__fullscreen-content">
+            <div className="site-header__mobile-logo">
+              <img src="/TFB_logo_reverse-stacked.svg" alt="The Financial Brief" className="site-header__mobile-logo-img" />
+            </div>
+            <nav className="site-header__mobile-nav" role="navigation" aria-label="Mobile navigation">
+              <Link href="/category/markets" onClick={() => setMenuOpen(false)}>Markets</Link>
+              <Link href="/category/economy" onClick={() => setMenuOpen(false)}>Economy</Link>
+              <Link href="/category/investing" onClick={() => setMenuOpen(false)}>Investing</Link>
+              <Link href="/category/crypto" onClick={() => setMenuOpen(false)}>Crypto</Link>
+              <Link href="/category/real-estate" onClick={() => setMenuOpen(false)}>Real Estate</Link>
+              <Link href="/category/banking" onClick={() => setMenuOpen(false)}>Banking</Link>
+              <Link href="/category/personal-finance" onClick={() => setMenuOpen(false)}>Personal Finance</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)}>Tools</Link>
+            </nav>
+            <button className="site-header__mobile-subscribe" onClick={() => setMenuOpen(false)}>Subscribe</button>
+            <div className="site-header__mobile-social">
+              <a href="#" aria-label="Follow on X / Twitter" className="site-header__social-link">
+                <img src="/x-icon.svg" alt="" className="social-icon social-icon--mobile" />
+              </a>
+              <a href="#" aria-label="Follow on LinkedIn" className="site-header__social-link">
+                <img src="/linkedin-icon.svg" alt="" className="social-icon social-icon--mobile" />
+              </a>
+              <a href="#" aria-label="Follow on Facebook" className="site-header__social-link">
+                <img src="/facebook-icon.svg" alt="" className="social-icon social-icon--mobile" />
+              </a>
+            </div>
           </div>
-          <button className="site-header__mobile-subscribe">Subscribe</button>
         </div>
       )}
       <div className="site-header__accent" aria-hidden="true"></div>
