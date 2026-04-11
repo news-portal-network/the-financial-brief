@@ -1421,9 +1421,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset:
   .site-header__logo--desktop .site-header__logo-img {
     height: 32px;
   }
-  .site-header__logo--desktop ~ .site-header__left {
+  .site-header__top-inner:has(.site-header__logo--desktop) .site-header__left {
     width: 100%;
     order: 10;
     margin-top: 8px;
+  }
+  .site-header__top-inner:has(.site-header__logo--desktop) {
+    flex-wrap: wrap;
   }
 }
