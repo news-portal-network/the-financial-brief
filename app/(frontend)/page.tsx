@@ -1,5 +1,6 @@
 import React from 'react'
 import { Playfair_Display, DM_Sans } from 'next/font/google'
+import HideHeaderFooter from './HideHeaderFooter'
 import './styles.css'
 
 const playfair = Playfair_Display({
@@ -32,6 +33,7 @@ export default async function ComingSoonPage() {
            textAlign: 'center',
            padding: '2rem',
          }}>
+      <HideHeaderFooter />
       <div style={{ maxWidth: '640px' }}>
         <div className="logo-text" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', marginBottom: '3rem' }} aria-label="The Financial Brief">
           <span style={{ fontSize: '18px', display: 'block', color: 'var(--text-on-dark)' }}>The</span>
