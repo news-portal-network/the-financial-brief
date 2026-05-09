@@ -4,6 +4,8 @@
    Tasks: A1-A5
    ================================================================ */
 
+export const dynamic = 'force-dynamic'
+
 import type { Metadata } from 'next'
 import { getPayload } from 'payload'
 import config from '@payload-config'
@@ -43,23 +45,6 @@ const queryRelatedArticles = cache(async (category: string, currentSlug: string)
 
   return result.docs
 })
-
-/* ── Static params for SSG ──────────────────────────────────────── */
-
-export async function generateStaticParams() {
-  const payload = await getPayload({ config })
-
-  const articles = await payload.find({
-    collection: 'articles',
-    where: { status: { equals: 'published' } },
-    limit: 100,
-    select: { slug: true },
-  })
-
-  return articles.docs.map((article) => ({
-    slug: article.slug,
-  }))
-}
 
 /* ── Dynamic SEO Metadata (Task A5) ─────────────────────────────── */
 
